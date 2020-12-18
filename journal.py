@@ -22,7 +22,7 @@ gui_layout = [
          sg.In(key='cal', enable_events=True, visible=False), 
           sg.CalendarButton('Calendar', target="cal",
           font=('MS Sans Serif', 10, 'bold'),key='calendar', format=('%B, %d, %Y'))],
-          [sg.Multiline(key='guiMulLine')],
+          [sg.Multiline(key='guiMulLine', size=(200, 12))],
         [sg.Submit(auto_size_button=True)]     
         ]
 
@@ -50,7 +50,7 @@ def SaveEntry(date,entry):
     
     f.write(f"{date}\n")
     f.write("==================\n")
-    f.write(entry)
+    f.write(f"{entry}")
     f.close()
     
 def ErrorHandler(message, param):
