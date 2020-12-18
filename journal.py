@@ -50,6 +50,7 @@ def SaveEntry(date,entry):
     
     f.write(f"{date}\n")
     f.write("==================\n")
+    f.write(entry)
     f.close()
     
 def ErrorHandler(message, param):
@@ -74,7 +75,7 @@ def main():
 
     while True:
         event, values = gui.read()
-        #print(event,values)
+      
         if event in (None, 'Exit'):
             break
         if event in ("cal"):
