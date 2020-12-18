@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['journal.py'],
-             pathex=['C:\\Users\\mcranfor\\Documents\\Projects\\CookingJournal'],
+             pathex=['C:\\Users\\mcranfor\\Documents\\Github\\Cooking-Journal'],
              binaries=[],
              datas=[],
              hiddenimports=[],
